@@ -5,11 +5,15 @@ public abstract class Animal implements Behaviour {
     private BigDecimal length;
     private BigDecimal height;
     private BigDecimal width;
+    private Colour colour;
 
-    public Animal(BigDecimal length, BigDecimal height, BigDecimal width) {
+
+
+    public Animal(BigDecimal length, BigDecimal height, BigDecimal width, Colour colour) {
         this.length = length;
         this.height = height;
         this.width = width;
+        this.colour = colour;
     }
 
     public BigDecimal getLength() {
@@ -34,5 +38,13 @@ public abstract class Animal implements Behaviour {
 
     public void setWidth(BigDecimal width) {
         this.width = width;
+    }
+
+    public Colour getColour() {
+        return colour;
+    }
+
+    public void setColour(Colour colour) {
+        this.colour = colour;
     }
 }
