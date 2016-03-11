@@ -9,7 +9,11 @@ public class Main {
         Dog dog = new Dog();
         dog.hight= new BigDecimal(10);
 
-        System.out.print(dog.hight);
+        Cat cat = new Cat();
+        cat.length = new BigDecimal(5);
+
+        System.out.println(dog.hight);
+        System.out.print(cat.length);
 
     }
 }
