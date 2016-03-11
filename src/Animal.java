@@ -7,8 +7,6 @@ public abstract class Animal implements Behaviour {
     private BigDecimal width;
     private Colour colour;
 
-
-
     public Animal(BigDecimal length, BigDecimal height, BigDecimal width, Colour colour) {
         this.length = length;
         this.height = height;
@@ -46,5 +44,10 @@ public abstract class Animal implements Behaviour {
 
     public void setColour(Colour colour) {
         this.colour = colour;
+    }
+
+    @Override
+    public String toString() {
+        return getClass() + " Długośc: " + getLength() + " " + " Wysokość: " + getHeight() + " Szerokość: " + getWidth() + " Kolor: " + getColour();
     }
 }

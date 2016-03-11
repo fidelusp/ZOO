@@ -24,5 +24,7 @@ public class Main {
         System.out.println("Kot: " + animals.get(1).makeSound() + " " + animals.get(1).getColour());
         System.out.println("Sowa: " + animals.get(2).makeSound() + " " + animals.get(2).getColour());
 
+        System.out.printf(animals.get(0).toString());
+
     }
 }
