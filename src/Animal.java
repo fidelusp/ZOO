@@ -1,9 +1,6 @@
 import java.math.BigDecimal;
 
-/**
- * Created by Paweł on 2016-03-11.
- */
-public abstract class Animal {
+public abstract class Animal implements Behaviour {
 
     private BigDecimal length;
     private BigDecimal height;

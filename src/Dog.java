@@ -8,4 +8,9 @@ public class Dog extends Animal {
     public Dog(BigDecimal length, BigDecimal height, BigDecimal width) {
         super(length, height, width);
     }
+
+    @Override
+    public String makeSound() {
+        return "Woof";
+    }
 }

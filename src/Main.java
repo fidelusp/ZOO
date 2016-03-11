@@ -20,7 +20,9 @@ public class Main {
         animals.add(owl);
         System.err.println(animals.size());
 
-        System.out.println("Tutaj? " + animals.get(0).getLength());
+        System.out.println("Pies: " + animals.get(0).makeSound());
+        System.out.println("Kot: " + animals.get(1).makeSound());
+        System.out.println("Sowa: " + animals.get(2).makeSound());
 
     }
 }

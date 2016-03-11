@@ -8,4 +8,9 @@ public class Cat extends Animal {
     public Cat(BigDecimal length, BigDecimal height, BigDecimal width) {
         super(length, height, width);
     }
+
+    @Override
+    public String makeSound() {
+        return "Meow";
+    }
 }
