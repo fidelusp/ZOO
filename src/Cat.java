@@ -3,10 +3,8 @@ import java.math.BigDecimal;
 /**
  * Created by Łukasz on 2016-03-11.
  */
-public class Cat {
+public class Cat extends Animal {
 
-    BigDecimal length;
-    BigDecimal hight;
-    BigDecimal width;
+
 
 }
