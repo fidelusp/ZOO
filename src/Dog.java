@@ -5,4 +5,7 @@ import java.math.BigDecimal;
  */
 public class Dog extends Animal {
 
+    public Dog(BigDecimal length, BigDecimal height, BigDecimal width) {
+        super(length, height, width);
+    }
 }

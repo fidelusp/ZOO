@@ -5,14 +5,14 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Animal dog = new Dog();
-        dog.height = new BigDecimal(10);
+        Animal dog = new Dog(new BigDecimal(99), new BigDecimal(21), new BigDecimal(34));
+        System.out.println(dog.getLength());
+        dog.setLength(new BigDecimal(100));
+        System.out.println(dog.getLength());
 
-        Animal cat = new Cat();
-        cat.length = new BigDecimal(5);
+        Animal cat = new Cat(new BigDecimal(99), new BigDecimal(21), new BigDecimal(34));
 
-        Animal owl = new Owl();
-        owl.width = new BigDecimal(500);
+        Animal owl = new Owl(new BigDecimal(99), new BigDecimal(21), new BigDecimal(34));
 
         List<Animal> animals = new ArrayList<>();
         animals.add(dog);
@@ -20,9 +20,7 @@ public class Main {
         animals.add(owl);
         System.err.println(animals.size());
 
-        System.out.println("Tutaj? " + animals.get(0).height);
-        System.out.println(cat.length);
-        System.out.print("Sowa " +owl.width);
+        System.out.println("Tutaj? " + animals.get(0).getLength());
 
     }
 }
