@@ -1,8 +1,5 @@
 import java.math.BigDecimal;
 
-/**
- * Created by Łukasz on 2016-03-11.
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -12,8 +9,12 @@ public class Main {
         Cat cat = new Cat();
         cat.length = new BigDecimal(5);
 
+        Owl owl = new Owl();
+        owl.width = new BigDecimal(500);
+
         System.out.println(dog.hight);
-        System.out.print(cat.length);
+        System.out.println(cat.length);
+        System.out.print("Sowa " +owl.width);
 
     }
 }
